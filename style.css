@@ -1,0 +1,99 @@
+/* Common styles, body etc */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+/* Styles for heading text  */
+.title {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 48px 0 66px;
+}
+
+.title__paragraph {
+    font: 500 12px/10px 'Poppins', sans-serif;
+    color: #303030;
+}
+
+.title__heading {
+    margin: 0;
+    font: 600 50px/55px 'Poppins', sans-serif;
+}
+
+/* svg styles, including plus and triangle */
+
+.title__svg {
+    fill:#e98457;
+    width: 30px;
+    height: 30px;
+}
+
+.svg__plus {
+    position: absolute;
+    top: 29px;
+    right: 130px;
+}
+
+.svg__triangle {
+    position: absolute;
+    bottom: 100px;
+}
+
+/* slider styles */
+
+.slider {
+    width: 90%;
+    margin: 0 0 10% 10%;
+    
+}
+
+.slider-img{
+    margin: 0 20px 0;
+}
+
+.slick-arrow {
+    display: block;
+    position: absolute;
+    border: 1px solid #000;
+    border-radius: 50%;
+    font-size: 0;
+    width: 66px;
+    height: 66px;
+    background-color: transparent;
+    outline: none;
+    z-index: 99;
+    
+}
+
+.slick-arrow.slick-next {
+    right: 50px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.slick-arrow.slick-prev {
+    left: -80px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+.slick-prev::before,
+.slick-next::after {
+    font: lighter 45px/10px 'Poppins', Arial, Helvetica, sans-serif;
+    color: #000;
+    display: block;
+}
+
+.slick-prev::before {
+    content: "<";
+}
+
+.slick-next::after {
+    content: ">";
+}
